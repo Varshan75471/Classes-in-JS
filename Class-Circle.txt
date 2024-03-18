@@ -1,0 +1,64 @@
+https://github.com/rvsp/typescript-oops/blob/master/Practice/class-circle.md
+
+==============================================================================
+
+
+class Circle {
+    constructor(radius = 1.0, color = "red") {
+        this.radius = radius;
+        this.color = color;
+    }
+
+    getDescription() {
+        return "This is a circle";
+    }
+
+    getRadius() {
+        return this.radius;
+    }
+
+    setRadius(radius) {
+        this.radius = radius;
+    }
+
+    getColor() {
+        return this.color;
+    }
+
+    setColor(color) {
+        this.color = color;
+    }
+
+    toString() {
+        return `Circle [ radius = ${this.radius} , color = ${this.color} ]`;
+    }
+
+    getArea() {
+        return Math.PI * Math.pow(this.radius, 2);
+    }
+
+    getCircumference() {
+        return 2 * Math.PI * this.radius;
+    }
+}
+
+let circle1 = new Circle();
+console.log(circle1.getDescription());
+let circle2 = new Circle(4.0);
+console.log(circle2.getDescription());
+let circle3 = new Circle(3.0, "Orange");
+console.log(circle3.getDescription());
+let circle4 = new Circle(5.0);
+console.log(circle4.getRadius());
+let circle5 = new Circle();
+console.log(circle5.setRadius(2.0));
+let circle6 = new Circle("Green");
+console.log(circle6.getColor());
+let circle7 = new Circle();
+console.log(circle7.setColor("yellow"));
+let circle8 = new Circle();
+console.log(circle8.toString());
+let circle9 = new Circle(2.5);
+console.log(circle9.getArea());
+let circle10 = new Circle(5.0);
+console.log(circle10.getCircumference());

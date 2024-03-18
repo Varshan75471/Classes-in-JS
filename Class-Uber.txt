@@ -1,0 +1,22 @@
+write a class to calculate the Uber price.
+
+===================================================================
+
+
+class UberPriceCalculator {
+
+
+    constructor(baseFare, costPerKm) {
+        this.baseFare = baseFare;
+        this.costPerKm = costPerKm;
+    }
+
+    calculatePrice(distanceInKm) {
+        return this.baseFare + this.costPerKm * distanceInKm;
+    }
+}
+
+let calculator = new UberPriceCalculator(2.5, 1.5); 
+let distanceTraveled = 10;
+let totalPrice = calculator.calculatePrice(distanceTraveled);
+console.log("Total price for the Uber ride:", totalPrice);

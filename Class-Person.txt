@@ -1,0 +1,26 @@
+Write a “person” class to hold all the details.
+
+===================================================================
+
+
+class Person {
+    name
+    age
+    gender
+    occupation
+    address
+
+    constructor(name, age, gender, occupation, address) {
+        this.name = name
+        this.age = age
+        this.gender = gender
+        this.occupation = occupation
+        this.address = address
+    }
+}
+
+let person1 = new Person("John Doe", 30, "Male", "Engineer", "123 Main St")
+console.log(person1)
+
+let person2 = new Person("Jane Smith", 25, "Female", "Doctor", "456 Elm St")
+console.log(person2)
